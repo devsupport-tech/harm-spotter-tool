@@ -3,6 +3,7 @@ import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Clipboard, Home, ExternalLink } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import Chatbot from './Chatbot';
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -68,6 +69,8 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
           <p>© {new Date().getFullYear()} My Estimate Team. All rights reserved.</p>
         </div>
       </footer>
+      
+      <Chatbot />
     </div>
   );
 };
